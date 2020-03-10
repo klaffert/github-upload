@@ -1,0 +1,7 @@
+<h1>Seattle Craiglist's Free Stuff Front Page</h1>
+<% @postsArray.each do |post| %>
+    <p><strong>Post:</strong> <%= post.title %> </p>
+    <p><strong>Post Link:</strong> <%= link_to post.link, "#{post.link}" %> </p>
+    <br>
+<% end %>
+    
